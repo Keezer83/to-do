@@ -3,7 +3,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 2px solid green;
 }
 .appTitle h1 {
   display: flex;
@@ -17,7 +16,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border: 2px solid blue;
 }
 .listToComplete {
   list-style: none;
@@ -25,10 +23,10 @@ body {
   flex-direction: column;
 }
 
-.toDoInput {
-  border: 2px solid red;
-}
-
 .itemCompleted {
   text-decoration: line-through;
+}
+
+.hidden {
+  visibility: hidden;
 }

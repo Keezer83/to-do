@@ -7,30 +7,24 @@ function addToDo() {
   listItem.textContent = toDoOption.value;
   const listCheckbox = document.createElement("input");
   listCheckbox.setAttribute("type", "checkbox");
+  const deleteItem = document.createElement("button");
+  deleteItem.setAttribute("type", "submit");
+  deleteItem.innerText = "X";
+  deleteItem.setAttribute("class", "hidden");
   listCheckbox.addEventListener("change", function () {
     if (listCheckbox.checked === true) {
       listItem.setAttribute("class", "itemCompleted");
+      deleteItem.setAttribute("class", "");
     } else {
       listItem.setAttribute("class", "");
+      deleteItem.setAttribute("class", "hidden");
     }
-    console.log(listCheckbox.checked);
+  });
+  deleteItem.addEventListener("click", function removeToDo() {
+    listItem.remove();
   });
   toDoOption.value = "";
+  listItem.appendChild(deleteItem);
   toDoList.appendChild(listItem);
   listItem.appendChild(listCheckbox);
-
-  // toDoList.innerHTML += `<li id="${toDoOption.value}"><input type="checkbox" class="pending" id="${toDoOption.value}"/>${toDoOption.value}</li>`;
-  // toDoOption.value = "";
-
-  //   Array.from(
-  //     document
-  //       .querySelectorAll(".pending")
-  //       .addEventListener("change", completeToDo)
-  //   );
-  //   function completeToDo() {
-  //     const completedItem = document.querySelectorAll("li");
-  //     const chkCompletedItem = Array.from(
-  //       document.getElementsByClassName("input")
-  //     );
-  //   }
 }
