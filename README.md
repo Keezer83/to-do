@@ -12,7 +12,7 @@ an uncluttered page to get things done [here](https://keezer83.github.io/to-do/)
 
 # Summary
 
-This was a great challenege to understand the parent and child relationship woth appending children for multiple elements in HTML. I am still trying to work on seperating applications into functions as right now this is mostly a sincle funtion withothers called inside it.
+This was a great challenge to understand the parent and child relationship with appending children for multiple elements in HTML. I am still trying to work on seperating applications into functions as right now this is mostly a sincle funtion with others called inside it.
 
 ## Author
 
